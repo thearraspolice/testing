@@ -1,0 +1,3 @@
+[submodule "shared/LiteSockets"]
+	path = shared/LiteSockets
+	url = https://codeberg.org/Taureon/LiteSockets.git
