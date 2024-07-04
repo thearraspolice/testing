@@ -1,0 +1,33 @@
+[{
+	"hasApp": true,
+	"secure": true,
+	"ip": "arrascalamity-2.glitch.me",
+	"motdDefault": {
+		"name": "Arras Calamity",
+		"description": "Play a Content-rich version of Arras that you can play forever!",
+		"version": "0.10",
+		"tags": ["armsrace", "calamity", "scenexefood"],
+		"icon": "https://arrascalamity-2.glitch.me/round.png"
+	}
+},{
+	"hasApp": true,
+	"secure": true,
+	"hasBrowser": true,
+	"ip": "arras.zyrafaq.com"
+},{
+	"hasApp": true,
+	"secure": true,
+	"ip": "ranars-prophecy.glitch.me"
+},{
+	"hasApp": true,
+	"secure": true,
+	"ip": "umbrarras.glitch.me"
+},{
+	"hasApp": true,
+	"secure": true,
+	"ip": "exenecs2.iogame.repl.co"
+},{
+	"hasApp": true,
+	"secure": true,
+	"ip": "twilight-testing-server-2.glitch.me"
+}]

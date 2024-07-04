@@ -1,0 +1,309 @@
+* {
+	border-radius: 10px;
+	font-family: Ubuntu;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+::-webkit-scrollbar {
+	width: 20px;
+}
+::-webkit-scrollbar-track {
+	margin: 10px;
+	border: 2px solid #666;
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #adb5ba;
+	border: 2px solid #666;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #b7bfc4;
+	border-color: #444;
+}
+
+
+html, body {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	background-color: #484848;
+	background-image: url('./osa_background_tile.png');
+	background-repeat: repeat;
+	background-color: gray;
+}
+
+iframe {
+	border-radius: 0px;
+	display: none;
+
+	/* try real damn hard to make it full screen */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+span {
+	font-size: inherit;
+}
+
+#container {
+	box-sizing: border-box;
+	/* "auto" in css is unreliable bullshit so this is forced*/
+	width: calc(100% - 80px);
+	height: calc(100% - 160px);
+	margin-left: 40px;
+	margin-top: 80px;
+	display: flex;
+	background: #dde6eb;
+	border: 2px solid #c7d1d6;
+	border-radius: 20px;
+}
+
+#browser {
+	border: 2px solid #adb5ba;
+	box-sizing: border-box;
+	width: calc(100% - 340px);
+	display: block;
+	margin: 20px;
+	margin-right: 21px;
+	background: #c2cacf;
+	overflow-y: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 15px;
+}
+
+#controls {
+	border: 2px solid #adb5ba;
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	background: #c2cacf;
+	margin: 20px;
+	margin-left: 0px;
+	padding: 5px;
+	border-radius: 15px;
+	align-content: stretch;
+}
+
+#manage {
+	margin: 5px;
+	display: flex;
+	height: 30px;
+	gap: 10px;
+}
+
+.button {
+	display: flex;
+	cursor: pointer;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+
+.listButton {
+	width: calc(calc(100% / 3) - 10px);
+	background-color: #9199d9;
+	border: 2px solid #777eb5;
+}
+.listButton:hover {
+	background-color: #a0a7d9;
+}
+
+#selected {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 10px;
+	box-sizing: border-box;
+	margin: 5px;
+	background-color: #c7c8d1;
+	border: 2px solid #aeafb8;
+	flex-grow: 1;
+}
+
+#version {
+	display: flex;
+	height: 15px;
+	opacity: 0.5;
+	font-size: 14px;
+}
+
+#name {
+	height: 30px;
+	padding-top: 10px;
+	font-size: 18px;
+}
+
+#description {}
+
+#tags {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	opacity: 0.5;
+	font-size: 14px;
+}
+
+#buttons {
+	display: flex;
+}
+
+.serverButton {
+	width: calc(calc(100% / 2) - 5px);
+	background-color: #6976e0;
+	height: 30px;
+	border: 2px solid #5b67c7;
+	border-radius: 15px;
+	font-size: 16px;
+}
+
+.serverButton:hover {
+	background-color: #7d87db;
+}
+
+#join {
+	margin-right: 5px;
+}
+
+#list {
+	margin-left: 5px;
+}
+
+.mainContainer {
+	height: 96px;
+	display: flex;
+	border: 2px solid #666;
+	border-radius: 15px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 10px;
+	cursor: pointer;
+}
+.mainContainer:hover {
+	background-color: #cfd8dd;
+}
+.debugLog {}
+.textContainer {}
+.statsContainer {
+	opacity: 50%;
+	margin-left: auto; 
+	margin-right: 0;
+	text-align: right;
+}
+.rightSideContainer {}
+.debugButton {}
+.icon {
+	width: 96px;
+	height: 96px;
+	margin-right: 15px;
+}
+.name {
+	font-size: 20px;
+}
+.description {
+	font-size: 16px;
+}
+.ping {}
+.players {}
+.version {}
+
+#managerPopup {
+	padding: 10px;
+	margin: 5px;
+	background-color: #b4b7d4;
+	border: 2px solid #9fa1bd;
+}
+
+.managerPopupContent {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+}
+
+.optionContainer {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.genericOption {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-items: stretch;
+}
+
+.uniqueOption {
+	padding: 5px;
+	user-select: none;
+	background-color: #a2a8d6;
+	border: 2px solid #8e93bd;
+}
+
+.uniqueOption:hover {
+	background-color: #9ca1d9;
+}
+
+.selectedOption {
+	background-color: '#969abd';
+}
+
+input {
+	border: 2px solid #9c9da6;
+	margin: 5px;
+}
+
+input[type="text"] {
+	margin: 0px;
+	width: 100%;
+}
+
+input[type="number"] {
+	width: 4em;
+}
+
+checkbox {
+	color: #000;
+	text-align: center;
+	user-select: none;
+	background-color: #fff;
+	border: 2px solid #9c9da6;
+	margin: 5px;
+	margin-left: 5px;
+	width: 20px;
+	height: 20px;
+}
+
+/* [google.com screenshot]
+	# What order do CSS classes apply?
+	## CSS Order Matters
+	In CSS, the order in which we specify our rules matters.
+	If a rule from the same style sheet, with the same level of specificity exists, the rule that is declared last in the CSS document will be the one that is applied.
+
+"last in the CSS document"
+L A S T   I N   T H E   F U C K I N G   D O C U M E N T
+WHAT??????????
+
+context: this used to be defined above .mainContainer so border-color didnt work while background-color did
+*/
+.selected {
+	background-color: #dde6eb;
+	border-color: #444;
+}
+.selected:hover {
+	background-color: #e4edf2;
+}
